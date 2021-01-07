@@ -1,0 +1,21 @@
+body {
+    width: 57%;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+#table{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    padding-bottom: 10px;
+}

@@ -1,0 +1,92 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 50px 600px 0.6fr;
+    grid-template-areas: "nav"
+    "hero"
+    "footer";
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    font-size: 14px;
+    grid-area: nav;
+    justify-content: space-between;
+    padding: 0 50px 0 30px;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    margin-left: 40px;
+    font-weight: 900;
+}
+
+.button {
+    background-color: #007cff;
+    box-sizing: border-box;
+    line-height: 30px;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 10px;
+    height: 30px;
+    font-size: 12px;
+}
+
+#hero-image {
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+    background-image: url(ironmanbanner.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#overview {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    width: 48%;
+    text-align: center;
+}
+
+#email {
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: none;
+    margin-right: 10px;
+    height: 30px;
+    width: 300px;
+    padding: 0;
+}
+
+footer {
+    background-color: black;
+    grid-area: footer;
+    display: inline-block;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+}
