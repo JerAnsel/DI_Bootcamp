@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    color: #505050;
+}
+
+#page-container {
+    display: grid;
+    grid-template-rows: 200px minmax(200px, auto) 500px 500px ;
+    grid-template-areas: "head"
+    "bio"
+    "exp"
+    "skills" ;
+    font-family: sans-serif;
+}
+
+#head {
+    background-color: #505050;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    grid-area: head;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+#profile {
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    border: white 2px solid;
+    box-shadow: 0 0 2px  rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    z-index: 1;
+}
+
+#bio {
+    display: flex;
+    grid-area: bio;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    height: auto;
+}
+
+#bio-content {
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    padding: 0 30px 10px 30px;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+}
+
+#social i {
+    padding: 0 5px;
+    margin-top: 4em;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+#contact a {
+    background-color: rgb(67, 209, 228);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 25px;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    font-size: 16px;
+    padding: 0.5em 1em;
+}
+
+#exp-container h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#exp {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 50px;
+}
+
+.card-title {
+    display: flex;
+    padding: 10px 0 !important; 
+    text-indent: 1em;
+    align-items: center;
+    width: 100%;
+    color: white;
+    height: 2em;
+    font-size: 20px;
+    margin: 0;
+    background-color: #505050;
+}
+
+#first {
+    grid-column: 0/1;
+}
+
+#second {
+    grid-column: 1/2;
+}
+
+
+#third {
+    grid-column: 0/1;
+}
+
+.exp-card {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px;
+}
+
+.exp-card span {
+    padding-left: 10px;
+    padding-top: 10px;
+}
