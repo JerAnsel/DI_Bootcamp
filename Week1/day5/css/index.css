@@ -1,0 +1,25 @@
+@import "template.css";
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+#content {
+    display: flex;
+    background-image: url(../images/back2.jfif);
+    height: 600px;
+    background-size: cover;
+}
+
+#content div {
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    height: 200px;
+    width: 30%;
+    font-size: 50px;
+    font-family: 'YellowTail', cursive;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin-top: 2em;
+    margin-left: 20px;
+    justify-content: center;
+}
