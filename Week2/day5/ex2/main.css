@@ -43,15 +43,17 @@ button {
 
 #content {
     margin: 0 !important;
+    padding-top: 40px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
 .title {
     color: rgb(36, 151, 140);
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 450;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-left: 90px;
 }
 
@@ -66,7 +68,7 @@ button {
 
 #name {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 400;
     color: rgb(36, 151, 140);
 }
 
@@ -82,4 +84,66 @@ button {
     border-left: 3px solid rgb(36, 151, 140);
     padding-left: 20px;
     margin-bottom: 0;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#portfolio-1 {
+    background-image: url(images/portfolio/port13.png);
+}
+
+#portfolio-2 {
+    background-image: url(images/portfolio/port8.png);
+}
+
+#portfolio-3 {
+    background-image: url(images/portfolio/port6.png);
+}
+
+#portfolio-4 {
+    background-image: url(images/portfolio/port1.png);
+}
+
+#portfolio-5 {
+    background-image: url(images/portfolio/port7.png);
+}
+
+#portfolio-6 {
+    background-image: url(images/portfolio/port3.png);
+}
+
+.thumb {
+    width: 280px;
+    height: 200px;
+    background-size: cover;
+    margin: 20px;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+#blog-1 {
+    background-image: url(images/blog/imag2.jpg);
+}
+
+#blog-2 {
+    background-image: url(images/blog/images.jpg);
+}
+
+#blog-3 {
+    background-image: url(images/blog/polit.jpg);
+}
+
+.blog {
+    width: 280px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    border: 3px solid white;
+    border-radius: 5px;
 }
