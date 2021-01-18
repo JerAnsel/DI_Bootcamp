@@ -42,19 +42,19 @@ button {
 }
 
 #content {
-    margin: 0 !important;
     padding-top: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .title {
     color: rgb(36, 151, 140);
     font-size: 24px;
     font-weight: 450;
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding-top: 40px;
-    padding-left: 90px;
 }
 
 #bio-link {
@@ -63,7 +63,9 @@ button {
 }
 
 #bio {
-    padding: 40px 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 3.5% 4%;
 }
 
 #name {
@@ -74,19 +76,20 @@ button {
 
 #bio-image {
     background-position: center;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     border-radius: 50%;
 
 }
 
 #bio-text {
     border-left: 3px solid rgb(36, 151, 140);
+    width: fit-content;
     padding-left: 20px;
     margin-bottom: 0;
 }
 
-#portfolio {
+.gallery {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -146,4 +149,12 @@ button {
     margin: 20px;
     border: 3px solid white;
     border-radius: 5px;
+}
+
+.card {
+    margin: 20px;
+}
+
+.card-img-top {
+    height: 200px;
 }
