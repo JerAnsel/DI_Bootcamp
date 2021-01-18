@@ -209,5 +209,10 @@ form {
 .btn {
     background-color: rgb(36, 151, 140);
     color: #FFF;
-    border: rgb(36, 151, 140);
+    border: rgb(36, 151, 139);
+}
+
+.btn:hover {
+    background-color: rgb(26, 114, 115);
+    color: #FFF;
 }
