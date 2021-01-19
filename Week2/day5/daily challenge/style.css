@@ -1,0 +1,122 @@
+body {
+    padding: 200px;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    margin: 50px;
+    transition: all .3s ease;
+}
+
+.fade {
+    opacity: 0.5;
+}
+
+.fade:hover {
+    opacity: 1;
+}
+
+.color:hover {
+    background-color: rgb(77, 129, 131);
+}
+
+.grow:hover {
+    transform: scale(1.3);
+}
+
+.rotate:hover {
+    transform: rotate(-30deg);
+}
+
+.circle:hover {
+    border-radius: 50%;
+}
+
+.threed:hover {
+    box-shadow: 1px 1px #53a7ea;
+    box-shadow: 2px 2px #53a7ea;
+    box-shadow: 3px 3px #53a7ea;
+    transform: translateX(-2px);
+    transform: translateY(-2px);
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.swing:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+.border:hover
+{
+        box-shadow: inset 0 0 0 25px rgb(77, 129, 131);
+}
