@@ -126,6 +126,18 @@ body {
     margin: 50px;
 }
 
+.card-title::after {
+    content: "";
+    /* border: 1px solid red; */
+    background-color: #505050;
+    left: 190px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    position: relative;
+    margin: auto;
+}
+
 .exp-card span {
     padding-left: 10px;
     padding-top: 10px;
