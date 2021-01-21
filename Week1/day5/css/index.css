@@ -3,7 +3,7 @@
 
 #content {
     display: flex;
-    background-image: url(../images/back2.jfif);
+    background-image: url(../images/bg.jfif);
     height: 600px;
     background-size: cover;
 }

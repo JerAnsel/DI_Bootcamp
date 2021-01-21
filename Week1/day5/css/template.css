@@ -2,9 +2,13 @@ body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
 #page-container {
         display: grid;
+        height: 100vh;
         grid-template-rows: 90px 1fr 50px;
         grid-template-areas: "nav"
         "content"
@@ -42,4 +46,6 @@ nav ul li {
     padding-right: 15px;
 }
 
-
+#content {
+    grid-area: content;
+}
