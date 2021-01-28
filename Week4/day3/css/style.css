@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    color: white;
+}
+
+button {
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+
+#calculator {
+    border-radius: 2px;
+    border: 1px solid black;
+    height: min-content;
+    width: min-content;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70px;
+    width: 260px;
+    padding-left: 20px;
+    background-color: rgb(95, 95, 95);
+
+}
+
+#buttons {
+    display: grid;
+    grid-template-rows: repeat(5,70px);
+    grid-template-columns: repeat(4, 70px);
+}
+
+#del {
+    grid-column: 1 / 3;
+    width: auto;
+
+}
+
+#clear {
+    grid-column: 3 / 5;
+    width: auto;
+}
