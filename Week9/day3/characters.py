@@ -17,8 +17,9 @@ class Druid(Character):
     def animal_help(self):
         self.attack += 5
     
-    def fight(self, enemy):
-        enemy.life -= (self.life*0.75 + self.attack*0.75)
+    def drain(self, enemy):
+        enemy.life -= (self.life*0.15 + self.attack*0.75)
+        self.life += (self.life*0.15 + self.attack*0.75)
 
 class Warrior(Character):
     def brawl(self, enemy):
